@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    *{
+        @apply transition-all;
+    }
+
+    .linear{
+        background: linear-gradient(180deg,transparent, rgba(103, 232, 249, .01), rgba(103, 232, 249, .5));
+    }
+
+    /* .cube{
+        clip-path: polygon(50% 0, 100% 29%, 100% 71%, 50% 100%, 0% 71%, 0% 29%);
+    } */
+
+    .cube::after{
+        content: '';
+        position: absolute;
+        @apply h-full w-full border-2 top-2 left-2 border-cyan-400 z-10 shadow-md shadow-cyan-400 rounded-md
+    }
+}
