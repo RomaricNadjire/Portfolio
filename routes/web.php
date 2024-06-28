@@ -13,7 +13,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return Inertia::render('About');
+    return Inertia::render('About');    
 });
 
 Route::post('/submit', function (Request $request) {

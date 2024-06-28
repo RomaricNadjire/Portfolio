@@ -3,23 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfAzLwpAAAAAFr6L7ZL0xuMayhGzJLGknTIbH-o"></script>
+        <title>{{ env('APP_NAME') }}</title>
+        {{-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfAzLwpAAAAAFr6L7ZL0xuMayhGzJLGknTIbH-o"></script> --}}
+        <!-- As you can see, we will use vite with jsx syntax for React-->
+        {{-- <script async src="https://www.google.com/recaptcha/api.js"></script> --}}
         @viteReactRefresh 
         @vite(['resources/css/app.css', 'resources/js/app.jsx'])
-        <!-- As you can see, we will use vite with jsx syntax for React-->
-        <script async src="https://www.google.com/recaptcha/api.js"></script>
         @inertiaHead
     </head>
     <body class="w-screen min-h-screen max-w-full dark:bg-gray-800">
 
         @inertia
 
-
+{{-- 
         <form action="/submit" method="POST" id='demo-form' class="relative">
             @csrf
             @method('post')
-            
+
             @if (session()->has('message'))
                 <div class="p-3 flex items-center bg-white justify-center">{{ session('message') }}</div>
             @endif
@@ -38,7 +38,7 @@
             function onSubmit(token) {
               document.getElementById("demo-form").submit();
             }
-        </script>
+        </script> --}}
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>

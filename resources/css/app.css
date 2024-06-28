@@ -9,7 +9,8 @@
     }
 
     .linear{
-        background: linear-gradient(180deg,transparent, rgba(103, 232, 249, .01), rgba(103, 232, 249, .5));
+        background-image: linear-gradient(650deg,transparent, rgba(103, 232, 249, .01), rgba(103, 232, 249, .5));
+        background-size: 50px 50px;
     }
 
     /* .cube{
